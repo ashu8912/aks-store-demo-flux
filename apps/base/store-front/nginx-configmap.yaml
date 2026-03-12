@@ -31,7 +31,7 @@ data:
             return 200 '{"status":"ok","version":"2.1.0"}';
         }
 
-        resolver 10.96.0.10 valid=2s;
+        resolver 10.0.0.10 valid=5s;
 
         location /api/orders {
             set $order_service http://order-service.pets.svc.cluster.local:3000;

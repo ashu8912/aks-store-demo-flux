@@ -4,8 +4,8 @@ metadata:
   name: store-front
 spec:
   type: LoadBalancer
+  selector:
+    app: store-front
   ports:
     - port: 80
       targetPort: 8080
-  selector:
-    app: store-front
